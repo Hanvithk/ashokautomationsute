@@ -1,0 +1,55 @@
+✅ What is API Testing?
+API Testing is a type of software testing that focuses on verifying whether Application Programming Interfaces (APIs) are working as expected.
+
+Instead of testing the UI (User Interface), we're testing the business logic, data responses, status codes, performance, and security of the backend system.
+
+🔍 Why is API Testing Important?
+UI might not be ready, but APIs are usually developed first — so you can start testing earlier.
+
+Helps catch issues in logic, data flow, or security early.
+
+Faster and more stable than UI testing.
+
+Useful for automation and regression testing.
+
+🧱 Components of an API Test
+Request
+
+HTTP Method: GET, POST, PUT, DELETE
+
+URL/Endpoint: The API address you're calling
+
+Headers: Content-Type, Authorization, etc.
+
+Body (for POST/PUT): JSON or XML payload
+
+Response
+
+Status Code: e.g., 200 OK, 201 Created, 400 Bad Request, 401 Unauthorized
+
+Response Body: JSON or XML content
+
+Headers
+
+Response Time
+
+🧪 What Do You Test in an API?
+Type	                   Description
+Functional Testing	   Does the API return the correct data?
+Status Code Verification   Are the responses correct (e.g., 200 for success, 404 for not found)?
+Schema Validation	   Does the response match the expected JSON/XML format?
+Authentication	           Does it require and handle tokens, API keys, etc., properly?
+Error Handling             Are invalid inputs handled correctly with proper messages?
+Performance	           How fast is the response? (Using tools like JMeter or Postman)
+Security 	           Are endpoints secure? Are sensitive data exposed?
+
+🛠️ Common Tools for API Testing
+Postman (Manual + Automation with Collections)
+
+Rest Assured (Java library for automated testing)
+
+SoapUI (Good for SOAP and REST APIs)
+
+Swagger (Documentation and testing if available)
+
+JMeter (Load and performance testing of APIs) 

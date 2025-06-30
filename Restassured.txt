@@ -1,0 +1,76 @@
+*******************************Rest assured*******************************
+Get-Method Validation:-
+
+[Assert the Status]
+Assert.assertEquals(getresponse.getStatusCode(), 200);
+
+[Print the status code]
+System.out.println(getresponse.getStatusCode());
+
+[Fetch the All header Values]
+System.out.println(getresponse.getHeaders());
+
+[Fetch the specific header Value]
+System.out.println(getresponse.getHeader("Content-Type")); 
+
+[Assert the Specific Header Values]
+Assert.assertEquals(getresponse.getHeader("Content-Type"), "application/json; charset=utf-8");
+
+I have verified date: Date=Fri, 22 Nov 2024 12:35:59 GMT
+
+
+[Fetch body content of Response]
+System.out.println(getresponse.asPrettyString()); 
+
+[This is for true or falls, like we have passed the value it's part of the response or not it just verified.]
+Assert.assertTrue(getresponse.asString().contains("true")); 
+
+[Validate body Content using Json Path.]
+Assert.assertEquals(getresponse.jsonPath().getString("data.middle_name"),"Cali" ); 
+
+Post-Method:-
+
+I have created one TC's by using the Eclipse.
+Then I will have to write our code in a method like add new Student Data And because this method we are going to take it as a as a test case.
+So we will use annotation, which is test. Now my test case is ready. we have a API and it shows method is post means
+this api can be used to make a post request means this API is going to be used to add new resource to the server.
+I'm creating a variable here String and post end point. We can give any name to this variable. So we have set our endpoint which we are going to use later on.
+We need to pass as a request. This Request Content is a prerequisite means whenever we are making a post request as a prerequisite, 
+this content should be set in the request itself.
+we have to define header, which is what kind of input you are sending. So it's a Application/Json.
+In the case of post, we cannot make a post request directly. First of all, we have to set our body means request body. We have to set our headers.
+First of all, we will have to call a method with the name given, given means. 
+First I'm setting a prerequisite, so if you check it, it gives the response, which is request specifications. means you can specify your different parts of the request.
+It could be header, it could be body. So first of all, we have to call this given method.
+It will give us request specification object and I am giving the name Post Request.
+First, we are saying rest assured, given means.First we are setting the prerequisite given means prerequisite.
+Then I am just using the PostRequest object here, we have a method with the name body here in the body we can define the complete body as a string.
+We can apply a pojo, which is a design pattern Pojo.
+We have to set header as well, if we are not setting header value it's fail and we will receive 415 status code.
+The header is Content-Type, "Application/json".
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
