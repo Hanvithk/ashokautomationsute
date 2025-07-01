@@ -16,7 +16,7 @@ System.out.println(getresponse.getHeader("Content-Type"));
 [Assert the Specific Header Values]
 Assert.assertEquals(getresponse.getHeader("Content-Type"), "application/json; charset=utf-8");
 
-I have verified date: Date=Fri, 22 Nov 2024 12:35:59 GMT
+I have verified 
 
 
 [Fetch body content of Response]
